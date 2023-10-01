@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="task-management">
+        <div class="left-section">
+            <h1>Project Manager</h1>
+        <div class="task-list">
+            <ul id="myTasksList">
+            </ul>
+        </div>
+        <h2>Task Management</h2>
+        <div class="create-task">
+            <form id="createTaskForm" method="post">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" placeholder="Enter your task" autocomplete="off" required>
+                <br><br>
+                <label for="assignedTo">Assign By:</label><br>
+                <select id="assignedTo" name="assignedTo">
+                    <option value="Aniketh">Aniketh</option>
+                    <option value="Teja">Teja</option>
+                    <option value="Akasha">Akasha</option>
+                    <option value="Kushi">Kushi</option>
+                    <option value="Pavan">Pavan</option>
+                </select><br><br>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" name="dueDate" id="dueDate"><br><br>
+                <label for="description">Description:</label><br>
+                <textarea name="description" id="description"></textarea><br><br>
+                <input type="submit" value="Create Task" class="button-28">
+            </form>
+        </div>
+        <div class="task-list">
+            <h3>Assigned Tasks</h3>
+            <ul id="assignedTasksList">
+            </ul>
+        </div>
+        <div class="completed-task-list">
+            <h3>Completed Tasks</h3>
+            <ul id="completedTasksList">
+            </ul>
+        </div>
+        </div>
+            <div class="right-section">
+                <h2>Chat</h2>
+                <div class="chat-messages">
+                </div>
+                <div class="chat-input">
+                    <select id="writerName">
+                        <option value="">Select Your Name</option>
+                        <option value="Aniketh">Aniketh</option>
+                        <option value="Teja">Teja</option>
+                        <option value="Akasha">Akasha</option>
+                        <option value="Kushi">Kushi</option>
+                        <option value="Pavan">Pavan</option>
+                    </select>
+                    <input type="text" id="chatMessage" placeholder="Type your message..." style="padding: 10px; font-size: 16px; border: 2px solid #ccc; border-radius: 5px; background-color: #f8f8f8; color: #333; transition: border-color 0.3s;"><br>
+                    <button id="sendButton" class="button-28">Send</button>
+                    <button id="clearChatButton" class="button-28">Clear Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

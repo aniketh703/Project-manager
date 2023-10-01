@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+    color: gray;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; 
+}
+
+section {
+    
+    background-color: #85FFBD;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+.task-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.task-list li:hover {
+    border: 5px solid darkgray;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;  
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-info h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: peru;
+}
+
+.task-due-date, .task-assigne {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+
+.create-task input[type="text"],
+.create-task select,
+.create-task textarea {
+    width: 95%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.create-task textarea {
+    height: 100px;
+}
+
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+.comment-list {
+    margin-top: 10px;
+}
+
+.comment {
+    font-size: 12px;
+    color: gray;
+}
+
+.completed-task-list {
+    margin-top: 30px;
+}
+
+.task-management {
+    display: flex;
+}
+
+.left-section, .right-section {
+    background-color: black;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.left-section {
+    flex: 3;
+}
+
+.chat-messages {
+    height: 900px;
+    border-radius: 20px;
+    overflow-y: auto;
+    background-color:wheat;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: black;
+}
