@@ -1,4 +1,5 @@
 # Project-manager
+![Screenshot (158)](https://github.com/aniketh703/Project-manager/assets/76203130/4531bc41-778f-4abd-a4bc-b43a140ddc1e)
 
 Project Manager is a web application that allows users to manage tasks, chat with team members, and track project progress.
 
